@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_dark"
+    tools:context=".DetailsActivity">
+
+    <TextView
+        android:id="@+id/storeInfoTextViewDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PPARIKH8's Footwear Fiesta"
+        android:textSize="24sp"
+        android:textColor="#d3d3d3"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/productImageView"
+        />
+
+    <ImageView
+        android:id="@+id/productImageView"
+        android:layout_width="302dp"
+        android:layout_height="265dp"
+        android:layout_marginTop="16dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/storeInfoTextViewDetails" />
+
+    <TextView
+        android:id="@+id/productTitleTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/productImageView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textSize="18sp"
+        android:textColor="#d3d3d3"
+        android:padding="8dp"/>
+
+    <TextView
+        android:id="@+id/productDescTextView"
+        android:layout_width="415dp"
+        android:layout_height="283dp"
+        android:layout_marginTop="16dp"
+        android:padding="8dp"
+        android:textSize="15sp"
+        android:textColor="#d3d3d3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/productTitleTextView" />
+
+    <Button
+        android:id="@+id/addToCartButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add to Cart"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/productDescTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:onClick="addToCartClicked"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

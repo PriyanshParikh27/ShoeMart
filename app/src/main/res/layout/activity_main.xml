@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_dark"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/storeInfoTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PPARIKH8's Footwear Fiesta"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#d3d3d3"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/mainContentScrollView"
+        />
+
+    <ScrollView
+        android:id="@+id/mainContentScrollView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@+id/storeInfoTextView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <!-- CardView for the first product -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/itemCardView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="4dp"
+            android:clickable="true"
+            android:onClick="onItemClick">
+
+            <ImageView
+                android:id="@+id/productImageView1"
+                android:layout_width="197dp"
+                android:layout_height="169dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/nike"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/storeInfoTextView"/>
+
+            <TextView
+                android:id="@+id/descriptionTextView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nike\nNike Men's Court Vision Low Basketball Sneaker\n$104.96"
+                android:textSize="14sp"
+                android:textColor="#009688"
+                android:padding="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/productImageView1"/>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/itemCardView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="4dp"
+            android:clickable="true"
+            android:onClick="onItemClick">
+
+            <ImageView
+                android:id="@+id/productImageView2"
+                android:layout_width="200dp"
+                android:layout_height="177dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/skechers" />
+
+            <TextView
+                android:id="@+id/descriptionTextView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Skechers\nSkechers Men's Track Ripkent Wide Width Running Shoe\n$89.99"
+                android:textSize="14sp"
+                android:textColor="#009688"
+                android:padding="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/productImageView2"/>
+
+        </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/itemCardView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="4dp"
+                android:clickable="true"
+                android:onClick="onItemClick">
+
+                <ImageView
+                    android:id="@+id/productImageView3"
+                    android:layout_width="203dp"
+                    android:layout_height="165dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/adidas" />
+
+                <TextView
+                    android:id="@+id/descriptionTextView3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Adidas\nAdidas Men's Predator Club Firm Ground Soccer Cleats\n$84.99"
+                    android:textSize="14sp"
+                    android:textColor="#009688"
+                    android:padding="8dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/productImageView3"/>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/itemCardView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="4dp"
+                android:clickable="true"
+                android:onClick="onItemClick">
+
+                <ImageView
+                    android:id="@+id/productImageView4"
+                    android:layout_width="224dp"
+                    android:layout_height="243dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/timberland" />
+
+                <TextView
+                    android:id="@+id/descriptionTextView4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Timberland \nTimberland Men's Radford Boot\n$139.97"
+                    android:textSize="14sp"
+                    android:textColor="#009688"
+                    android:padding="8dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/productImageView4"/>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/itemCardView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="4dp"
+                android:clickable="true"
+                android:onClick="onItemClick">
+
+                <ImageView
+                    android:id="@+id/productImageView5"
+                    android:layout_width="224dp"
+                    android:layout_height="243dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/puma" />
+
+                <TextView
+                    android:id="@+id/descriptionTextView5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Puma \nPuma Men's Rebound LayUp Sneaker\n$89.99"
+                    android:textSize="14sp"
+                    android:textColor="#009688"
+                    android:padding="8dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/productImageView5"/>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/itemCardView6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="4dp"
+                android:clickable="true"
+                android:onClick="onItemClick">
+
+                <ImageView
+                    android:id="@+id/productImageView6"
+                    android:layout_width="220dp"
+                    android:layout_height="186dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/bullboxer" />
+
+                <TextView
+                    android:id="@+id/descriptionTextView6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Bullboxer \nBullboxer Anthony Sneaker\n$109.99"
+                    android:textSize="14sp"
+                    android:textColor="#009688"
+                    android:padding="8dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/productImageView6"/>
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
