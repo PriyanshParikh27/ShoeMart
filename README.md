@@ -32,3 +32,16 @@ Follow these steps to download and run the app:
   - Open Android Studio.
   - Click on File > Open.
   - Navigate to the cloned repository folder and select it to open the project.
+
+3. **Sync Project with Gradle Files:**
+
+   - Once the project loads, click on File > Sync Project with Gradle Files to ensure all dependencies are correctly downloaded.
+
+4. **Build the Project:**
+
+   - Click on Build > Rebuild Project to compile the project.
+
+5. **Run the App:**
+
+   - Connect your Android device via USB or set up an emulator in Android Studio.
+   - Click the Run button (green play icon) or use Shift + F10 to launch the app on your selected device.
