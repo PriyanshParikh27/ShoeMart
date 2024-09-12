@@ -45,3 +45,14 @@ Follow these steps to download and run the app:
 
   - Connect your Android device via USB or set up an emulator in Android Studio.
   - Click the **Run** button (green play icon) or use **Shift + F10** to launch the app on your selected device.
+
+## Contributing
+
+If you would like to contribute to this project:
+
+1. **Fork** the repository.
+2. **Create a new branch** (`git checkout -b feature-branch`).
+3. **Make your changes and commit** (`git commit -m 'Add some feature'`).
+4. **Push to the branch** (`git push origin feature-branch`).
+5. **Open a Pull Request**.
+
