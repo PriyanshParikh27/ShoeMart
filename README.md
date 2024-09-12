@@ -35,13 +35,13 @@ Follow these steps to download and run the app:
 
 3. **Sync Project with Gradle Files:**
 
-   - Once the project loads, click on File > Sync Project with Gradle Files to ensure all dependencies are correctly downloaded.
+  - Once the project loads, click on File > Sync Project with Gradle Files to ensure all dependencies are correctly downloaded.
 
 4. **Build the Project:**
 
-   - Click on Build > Rebuild Project to compile the project.
+  - Click on Build > Rebuild Project to compile the project.
 
 5. **Run the App:**
 
-   - Connect your Android device via USB or set up an emulator in Android Studio.
-   - Click the Run button (green play icon) or use Shift + F10 to launch the app on your selected device.
+  - Connect your Android device via USB or set up an emulator in Android Studio.
+  - Click the Run button (green play icon) or use Shift + F10 to launch the app on your selected device.
