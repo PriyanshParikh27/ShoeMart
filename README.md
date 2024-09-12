@@ -1,6 +1,6 @@
-# [ShoeMart]
+# ShoeMart
 
-**[ShoeMart]** is a modern e-commerce storefront app for shoe shopping, developed with Java and XML in Android Studio. The app displays a variety of shoes with their prices and short descriptions on the main page. Users can click on each shoe to see a detailed product description and add it to their cart.
+**ShoeMart** is a modern e-commerce storefront app for shoe shopping, developed with Java and XML in Android Studio. The app displays a variety of shoes with their prices and short descriptions on the main page. Users can click on each shoe to see a detailed product description and add it to their cart.
 
 ## Features
 
